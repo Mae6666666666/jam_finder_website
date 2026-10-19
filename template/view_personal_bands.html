@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bands</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <a href="create_band.html" class="make-band">+ Create Band</a>
+        <h2 class="red-text">
+            Jam Finder
+        </h2>
+        <a href="profile.html" class="img-link">
+        
+    </header>
+    
+    <!-- <div class="no-results-box">
+        <img class="smaller-question" src="/static/question_mark.png" alt="a picture of a question mark">
+
+        <h2 class="black-a">
+            You haven't created any bands 
+        </h2>
+        <a class="black-a" href="make_band.html">
+            create a band?
+        </a>
+    </div> -->
+
+    <div class="results-box">
+        <div class="band-card">
+            <img src="/static/gorillaz_pfp.jpeg" alt="">
+
+            <div class="band-info">
+                <h2 class="black-a">
+                    {name}
+                </h2>
+                <p class="black-a">
+                    {description}
+                </p>
+                <button>
+                    {genre}
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="band-card">
+            <img src="/static/ace.png" alt="">
+
+            <div class="band-info">
+                <h2 class="black-a">
+                    {name}
+                </h2>
+                <p class="black-a">
+                    {description}
+                </p>
+                <button>
+                    {genre}
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

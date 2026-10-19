@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+</head>
+<body> 
+    <header class="header-center">
+        <h2 class="text-center">Jam Finder</h2>
+    </header>
+
+    <main>
+        <div class="info-box">
+            <form method="post" action="{{ url_for('login') }}">
+                {% if error %}
+                    <p>{{ error }}</p>
+                {% endif %}
+
+                <h1 class="black-a">Login</h1>
+                <input class="form-input" name="username" type="text" placeholder="Please enter username">
+                <br>
+                <input class="form-input" name="password" type="password" placeholder="Enter password">
+                <br>
+                <button id="login-btn" type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="create-account">
+            <p>
+                Don't have an account? 
+                <a class="black-a" href="{{ url_for('signup') }}">Sign Up</a>
+                <!-- <a class="black-a" href="signup.html">Sign Up</a> -->
+                here!
+            </p>
+            <p>
+                Forgot password? click
+                <a class="black-a" href="reset_password.html">here</a>
+                to reset
+            </p>
+        
+        </div>
+
+    </main>
+
+</body>
+</html>

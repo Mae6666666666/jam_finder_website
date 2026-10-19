@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <a href="create_band.html" class="make-band">+ Create Band</a>
+        <h2 class="red-text">
+            Jam Finder
+        </h2>
+        <a href="profile.html" class="img-link">
+            <!-- <img class="profile-pic" src="{{ url_for('static', filename='reno_rude.jpg') }}" alt="user profile picture in a circle shape"> -->
+            <img class="profile-pic" src="/static/reno_rude.jpg" alt="user profile picture in a circle shape">
+        </a>
+    </header>
+    <h1 class="whos-playing">
+        Who's playing near you?
+    </h1>
+    <main>
+        <div class="search-box">
+            
+            <input id="location-input" placeholder="Search for band location" type="search">
+    
+            <br>
+            <div class="general-container">
+                <select name="genre" id="genre">
+                <option value="genre">
+                    genre
+                </option>
+                <option value="rock">
+                    Rock
+                </option>
+                <option value="punk">
+                    Punk
+                </option>
+                <option value="alternative">
+                    Alternative
+                </option>
+                <option value="pop">
+                    Pop
+                </option>
+                <option value="metal">
+                    Metal
+                </option>
+                <option value="electronic">
+                    Electronic
+                </option>
+                <option value="nu-metal">
+                    Nu-Metal
+                </option>
+            </select>
+
+            <select name="instrument" id="instrument">
+                <option value="instrument">
+                    Instrument
+                </option>
+                <option value="bass">
+                    Bass
+                </option>
+                <option value="drums">
+                    Drums
+                </option>
+                <option value="vocals">
+                    Vocals
+                </option>
+                <option value="guitar">
+                    Guitar
+                </option>
+                <option value="violin">
+                    Violin
+                </option>
+                <option value="saxaphone">
+                    Saxaphone
+                </option>
+                <option value="melodica">
+                    Melodica
+                </option>
+            </select>
+            </div>
+
+        
+        
+        <button id="search-btn">
+            Search!
+        </button>
+        </div>
+        <h1 class="text-center">Or...</h1>
+        <div class="search-box">
+            <input id="location-input" placeholder="Search for musicians by instrument" type="search">
+
+            <button id="search-btn">
+                Search!
+            </button>
+        </div>
+        
+        
+    </main>
+    
+    <footer>
+        <a href="about.html">
+            About
+        </a>
+        <br>
+        <br>
+        <a href="support.html">
+            Support
+        </a>
+        <br>
+        <br>
+        <p class="grey-text">
+            ___________________________________________________________________________________________________________________
+        </p>
+        <br>
+        <p class="grey-text">©2026 Jam Finder. All rights reserved</p>
+    </footer>
+</body>
+</html>
