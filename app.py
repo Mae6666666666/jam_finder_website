@@ -22,7 +22,7 @@ def homepage():
 
 
 @app.route("/login")
-def login():
+def login(): #i get it now, this and the login below do different things. this one is if the method is a get, not a post!
     return render_template("login.html")
 
 @app.route("/login", methods=["POST"])
